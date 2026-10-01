@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>Exifguard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Exifguard</h1>
+  </header>
+  <p id="error" class="error" hidden></p>
+  <main>
+    <section class="board">
+      <p class="hint">Flags are leads, not proof. A clean result does not prove authenticity.</p>
+      <form id="path-form">
+        <input id="path" type="text" placeholder="File or directory path" spellcheck="false" />
+        <div class="row">
+          <button id="check-btn" class="btn" type="button">Check</button>
+          <button id="scan-btn" class="btn" type="button">Scan</button>
+        </div>
+      </form>
+      <h2>Results</h2>
+      <ul id="results" class="cases"></ul>
+    </section>
+    <section id="detail" class="detail">
+      <p id="empty" class="empty">Select a file.</p>
+      <pre id="summary" class="summary" hidden></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -85,6 +85,24 @@ untouched camera original?", not "was this photo manipulated?" Please keep in mi
 Use exifguard findings to decide where to look closer — never as the sole basis for a
 claim in either direction.
 
+## Desktop
+
+Local window, same checks, no network. Paste a file path and Check, or a directory path
+and Scan. Scan walks the directory for `.jpg` / `.jpeg` files. A file that cannot be read
+is an error row; the rest of the scan still finishes. Flags are leads, not proof. A clean
+result does not prove authenticity.
+
+```sh
+cargo build --manifest-path src-tauri/Cargo.toml
+./src-tauri/target/debug/exifguard-desktop
+```
+
+## Roadmap
+
+- [x] Rust core library + CLI
+- [x] Tauri window (`exifguard-desktop`, same checks, no network)
+- [ ] Windows and Mac release builds (workflow is in, run it when the suite is finished)
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).

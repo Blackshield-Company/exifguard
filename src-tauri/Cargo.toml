@@ -1,0 +1,22 @@
+[package]
+name = "exifguard-desktop"
+version = "0.1.0"
+edition = "2021"
+description = "Exifguard desktop — local photo checks, no network"
+license = "Apache-2.0"
+
+[lib]
+name = "exifguard_desktop_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "exifguard-desktop"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+exifguard = { path = ".." }
