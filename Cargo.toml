@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
 description = "Batch forensic verifier for evidence photos — flags signs of editing or tampering via EXIF metadata analysis"
-repository = "https://github.com/synthalorian/exifguard"
+repository = "https://github.com/Blackshield-Company/exifguard"
 keywords = ["forensics", "exif", "evidence", "metadata", "cli"]
 categories = ["command-line-utilities"]
 

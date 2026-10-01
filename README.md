@@ -89,4 +89,5 @@ claim in either direction.
 
 Apache-2.0. See [LICENSE](LICENSE).
 
-Made by synth with blackclaw
+
+Part of [Blackshield Company](https://github.com/Blackshield-Company).
