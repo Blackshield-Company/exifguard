@@ -1,3 +1,5 @@
+![exifguard](.github/preview.png)
+
 # exifguard
 
 Batch forensic verifier for evidence photos. exifguard scans JPEG files and flags signs of
